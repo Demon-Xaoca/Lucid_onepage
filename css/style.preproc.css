@@ -1,0 +1,96 @@
+@import url(bootstrap.css);
+@import url(bootstrap-theme.css);
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-SemiBold.eot");
+  src: url("../fonts/SourceSansPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-SemiBold.woff2") format("woff2"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff"), url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype"), url("../fonts/SourceSansPro-SemiBold.svg#SourceSansPro-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url("../fonts/Quicksand-Bold.eot");
+  src: url("../fonts/Quicksand-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Quicksand-Bold.woff2") format("woff2"), url("../fonts/Quicksand-Bold.woff") format("woff"), url("../fonts/Quicksand-Bold.ttf") format("truetype"), url("../fonts/Quicksand-Bold.svg#Quicksand-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Source Sans Pro-Bold';
+  src: url("../fonts/SourceSansPro-Bold.eot");
+  src: url("../fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"), url("../fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Source Sans Pro-Regular';
+  src: url("../fonts/SourceSansPro-Regular.eot");
+  src: url("../fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"), url("../fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  padding: 0;
+  margin: 0; }
+
+header {
+  background: url("../images/header_bg.png"), no-repeat;
+  background-size: cover; }
+  header .nav_bottom {
+    margin-bottom: 51px; }
+  header .navbar-default {
+    border: none;
+    background: none; }
+    header .navbar-default .navbar-brand, header .navbar-default .navbar-nav > li > a {
+      margin-top: 42px; }
+    header .navbar-default .navbar-brand, header .navbar-default .navbar-brand:hover {
+      color: #ffffff;
+      font-size: 24px;
+      font-family: 'Quicksand-Bold', sans-serif; }
+    header .navbar-default .navbar-nav > li {
+      margin: 0 12px 0;
+      font-family: "Source Sans Pro", sans-serif; }
+      header .navbar-default .navbar-nav > li > a {
+        color: #fffefe;
+        font-size: 16px; }
+        header .navbar-default .navbar-nav > li > a:after {
+          height: 2px;
+          display: block;
+          background: url("../images/hover_menu.png"), no-repeat;
+          background-size: cover;
+          content: "";
+          margin-top: 13px;
+          width: 0;
+          transition: 0.5s; }
+        header .navbar-default .navbar-nav > li > a:hover {
+          color: #fffefe; }
+          header .navbar-default .navbar-nav > li > a:hover:after {
+            width: 100%; }
+  header .font_header {
+    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif; }
+    header .font_header p {
+      color: #999999;
+      font-size: 18px;
+      max-width: 480px;
+      margin-bottom: 63px; }
+    header .font_header .THEME {
+      color: #008ed6;
+      font-size: 14px;
+      margin: 40px 0 30px; }
+    header .font_header h1 {
+      color: #ffffff;
+      font-size: 48px;
+      width: 100%;
+      margin-bottom: 39px; }
+    header .font_header .blue {
+      margin-left: 0; }
+    header .font_header a {
+      padding: 19px 30px 19px;
+      border: 1px solid #454449;
+      border-radius: 1px;
+      margin: 0 10px;
+      font-family: 'Source Sans Pro-Bold', sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      text-decoration: none; }
+      header .font_header a:hover {
+        padding: 21px 28px 20px;
+        background-color: #008ed6;
+        border: none; }
+
+/*# sourceMappingURL=style.preproc.css.map */

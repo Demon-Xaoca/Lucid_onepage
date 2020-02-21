@@ -52,6 +52,7 @@
 header {
   background: url("../images/header_bg.png"), no-repeat;
   background-size: cover;
+  margin-bottom: 65px;
   .nav_bottom {
     margin-bottom: 51px;
   }
@@ -99,9 +100,13 @@ header {
       }
     }
   }
-
+.Phone {
+  margin-top: 110px;
+  width: 100%;
+}
   .font_header {
     font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+    padding-bottom: 110px;
     p {
       color : #999999;
       font-size: 18px;
@@ -132,11 +137,173 @@ header {
         font-size: 14px;
         color: #ffffff;
         text-decoration: none;
+        display: inline-block;
         &:hover {
           padding: 21px 28px 20px;
           background-color:#008ed6;
           border: none;
         }
       }
+  }
+}
+.List_sect {
+  margin-bottom: 144px;
+  .List_of {
+    font-family: 'Source Sans Pro', Source Sans Pro-Bold, sans-serif;
+    color: #1a1a1a;
+    font-size: 36px;
+
+    &:before {
+      content: "PRODUCT OVERVIEW";
+      color: #008ed6;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 22px;
+    }
+
+    &:after {
+      content: url("../images/after_two.png");
+      display: block;
+      margin: 35px 0 73px;
+    }
+  }
+  .for_img {
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border:solid 1px #e0e0e0;
+    overflow: hidden;
+    color: #008ed6;
+    padding-top: 31px;
+    font-size: 26px;
+    box-sizing: border-box;
+    margin-bottom: 34px;
+  }
+  h3 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  h3,p{
+    font-family: 'Source Sans Pro-Regular',SansSerif;
+  }
+  p {
+    color: #999999;
+    font-size: 18px;
+    max-width: 239px;
+  }
+}
+.Telephone .container .row div {
+  .devices {
+    width: 100%;
+    margin: 0 55px 76px 0;
+  }
+
+  h2 {
+    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+    color: #1a1a1a;
+    font-size: 36px;
+    padding-left: 3px;
+
+    &:before {
+      content: "DIP INTO THE DETAILS";
+      display: block;
+      color: #008ed6;
+      font-size: 14px;
+      margin-bottom: 22px;
+      padding-left: -2px;
+    }
+
+    &:after {
+      content: url("../images/after_two.png");
+      display: block;
+      margin: 34px 0 32px;
+      padding-left: 0;
+    }
+  }
+
+  p {
+    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+    color: #999999;
+    font-size: 18px;
+    margin-bottom: 42px;
+  }
+
+  ul {
+    .Cup:before {
+      content: url("../images/Cup.png");
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .Mouse:before {
+      content: url("../images/Mouse.png");
+      display: inline-block;
+      margin-right: 14px;
+    }
+    .Energy:before {
+      content: url("../images/Energy.png");
+      display: inline-block;
+      margin-right: 13px;
+    }
+    .Speed:before {
+      content: url("../images/Speed.png");
+      display: inline-block;
+      margin-right: 10px;
+    }
+    li {
+      margin-bottom: 18px;
+      font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+      list-style-type: none;
+      color: #1b1b1b;
+      font-size: 18px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.Super_easy {
+  background: url("../images/IPhone.png") no-repeat right #f2f2f2;
+  padding: 61px 0 65px;
+
+  .container .row {
+    .col-md-7 {
+      img {
+        width: 100%;
+      }
+    }
+    .col-md-5 {
+      h2, p {
+        font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+      }
+
+      h3 {
+        color: #1a1a1a;
+        font-size: 36px;
+        margin: 70px 0 29px;
+
+        &:before {
+          color: #008ed6;
+          font-size: 14px;
+          content: "DIP INTO THE DETAILS";
+          display: block;
+          margin-bottom: 24px;
+        }
+
+        &:after {
+          content: url("../images/after_two.png");
+          display: block;
+          margin-top: 29px;
+        }
+      }
+
+      p {
+        color: #999999;
+        font-size: 18px;
+      }
+
+    }
   }
 }

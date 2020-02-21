@@ -30,7 +30,8 @@
 
 header {
   background: url("../images/header_bg.png"), no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 65px; }
   header .nav_bottom {
     margin-bottom: 51px; }
   header .navbar-default {
@@ -61,8 +62,12 @@ header {
           color: #fffefe; }
           header .navbar-default .navbar-nav > li > a:hover:after {
             width: 100%; }
+  header .Phone {
+    margin-top: 110px;
+    width: 100%; }
   header .font_header {
-    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif; }
+    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+    padding-bottom: 110px; }
     header .font_header p {
       color: #999999;
       font-size: 18px;
@@ -87,10 +92,125 @@ header {
       font-family: 'Source Sans Pro-Bold', sans-serif;
       font-size: 14px;
       color: #ffffff;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
       header .font_header a:hover {
         padding: 21px 28px 20px;
         background-color: #008ed6;
         border: none; }
+
+.List_sect {
+  margin-bottom: 144px; }
+  .List_sect .List_of {
+    font-family: 'Source Sans Pro', Source Sans Pro-Bold, sans-serif;
+    color: #1a1a1a;
+    font-size: 36px; }
+    .List_sect .List_of:before {
+      content: "PRODUCT OVERVIEW";
+      color: #008ed6;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 22px; }
+    .List_sect .List_of:after {
+      content: url("../images/after_two.png");
+      display: block;
+      margin: 35px 0 73px; }
+  .List_sect .for_img {
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: solid 1px #e0e0e0;
+    overflow: hidden;
+    color: #008ed6;
+    padding-top: 31px;
+    font-size: 26px;
+    box-sizing: border-box;
+    margin-bottom: 34px; }
+  .List_sect h3 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 18px; }
+  .List_sect h3, .List_sect p {
+    font-family: 'Source Sans Pro-Regular',SansSerif; }
+  .List_sect p {
+    color: #999999;
+    font-size: 18px;
+    max-width: 239px; }
+
+.Telephone .container .row div .devices {
+  width: 100%;
+  margin: 0 55px 76px 0; }
+.Telephone .container .row div h2 {
+  font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+  color: #1a1a1a;
+  font-size: 36px;
+  padding-left: 3px; }
+  .Telephone .container .row div h2:before {
+    content: "DIP INTO THE DETAILS";
+    display: block;
+    color: #008ed6;
+    font-size: 14px;
+    margin-bottom: 22px;
+    padding-left: -2px; }
+  .Telephone .container .row div h2:after {
+    content: url("../images/after_two.png");
+    display: block;
+    margin: 34px 0 32px;
+    padding-left: 0; }
+.Telephone .container .row div p {
+  font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+  color: #999999;
+  font-size: 18px;
+  margin-bottom: 42px; }
+.Telephone .container .row div ul .Cup:before {
+  content: url("../images/Cup.png");
+  display: inline-block;
+  margin-right: 10px; }
+.Telephone .container .row div ul .Mouse:before {
+  content: url("../images/Mouse.png");
+  display: inline-block;
+  margin-right: 14px; }
+.Telephone .container .row div ul .Energy:before {
+  content: url("../images/Energy.png");
+  display: inline-block;
+  margin-right: 13px; }
+.Telephone .container .row div ul .Speed:before {
+  content: url("../images/Speed.png");
+  display: inline-block;
+  margin-right: 10px; }
+.Telephone .container .row div ul li {
+  margin-bottom: 18px;
+  font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+  list-style-type: none;
+  color: #1b1b1b;
+  font-size: 18px; }
+  .Telephone .container .row div ul li:last-child {
+    margin-bottom: 0; }
+
+.Super_easy {
+  background: url("../images/IPhone.png") no-repeat right #f2f2f2;
+  padding: 61px 0 65px; }
+  .Super_easy .container .row .col-md-7 img {
+    width: 100%; }
+  .Super_easy .container .row .col-md-5 h2, .Super_easy .container .row .col-md-5 p {
+    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif; }
+  .Super_easy .container .row .col-md-5 h3 {
+    color: #1a1a1a;
+    font-size: 36px;
+    margin: 70px 0 29px; }
+    .Super_easy .container .row .col-md-5 h3:before {
+      color: #008ed6;
+      font-size: 14px;
+      content: "DIP INTO THE DETAILS";
+      display: block;
+      margin-bottom: 24px; }
+    .Super_easy .container .row .col-md-5 h3:after {
+      content: url("../images/after_two.png");
+      display: block;
+      margin-top: 29px; }
+  .Super_easy .container .row .col-md-5 p {
+    color: #999999;
+    font-size: 18px; }
 
 /*# sourceMappingURL=style.preproc.css.map */

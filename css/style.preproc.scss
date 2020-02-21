@@ -45,6 +45,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Source Sans Pro-it';
+  src: url('../fonts/SourceSansPro-It.woff2') format('woff2'),
+  url('../fonts/SourceSansPro-It.woff') format('woff'),
+  url('../fonts/SourceSansPro-It.ttf') format('truetype'),
+  url('../fonts/SourceSansPro-It.svg#SourceSansPro-It') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -53,6 +63,9 @@ header {
   background: url("../images/header_bg.png"), no-repeat;
   background-size: cover;
   margin-bottom: 65px;
+  .navbar-collapse {
+    border:none;
+  }
   .nav_bottom {
     margin-bottom: 51px;
   }
@@ -266,6 +279,7 @@ header {
 }
 .Super_easy {
   background: url("../images/IPhone.png") no-repeat right #f2f2f2;
+  background-size: contain;
   padding: 61px 0 65px;
 
   .container .row {
@@ -305,5 +319,94 @@ header {
       }
 
     }
+  }
+}
+.Pricings .container-fluid .row {
+  img {
+    width: 100%;
+  }
+
+  .carousel-caption {
+    top: 65px;
+  }
+
+  h3 {
+    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Bold', sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+
+    &:before {
+      content: "QUALITY HAS ITS PRICE";
+      display: block;
+      font-size: 14px;
+      color: #008ed6;
+      margin-bottom: 24px;
+    }
+
+    &:after {
+      content: url("../images/after_two.png");
+      display: block;
+      margin-top: 29px;
+    }
+  }
+
+  p {
+    font-family: 'Source Sans Pro-it', SansSerif;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 31px;
+  }
+
+  .col-sm-6 img {
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  h4 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+  }
+
+  .John {
+    margin-left: 24px;
+
+    &:after {
+      display: block;
+      content: "CEO, THE RIVERS COMPANY";
+      margin-top: 15px;
+    }
+  }
+
+  .Dean {
+    margin-left: 25px;
+    &:after {
+      display: block;
+      content: "UX DESIGNER, GOOGLE INC.";
+      margin-top: 16px;
+    }
+  }
+  .carousel-indicators {
+    .active {
+      background-color: #ffffff;
+      width: 14px;
+      height: 14px;
+      border: none;
+      position: relative;
+      bottom: -7px;
+      margin: 0 7px 0;
+    }
+    li {
+      width: 4px;
+      height: 4px;
+      margin: 0 11px 0;
+      border-radius: 50px;
+    }
+  }
+  carousel-inner {
+    padding-bottom: 60px;
   }
 }

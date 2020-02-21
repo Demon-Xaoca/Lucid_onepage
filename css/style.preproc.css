@@ -24,6 +24,11 @@
   src: url("../fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"), url("../fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Source Sans Pro-it';
+  src: url("../fonts/SourceSansPro-It.woff2") format("woff2"), url("../fonts/SourceSansPro-It.woff") format("woff"), url("../fonts/SourceSansPro-It.ttf") format("truetype"), url("../fonts/SourceSansPro-It.svg#SourceSansPro-It") format("svg");
+  font-weight: normal;
+  font-style: italic; }
 * {
   padding: 0;
   margin: 0; }
@@ -32,6 +37,8 @@ header {
   background: url("../images/header_bg.png"), no-repeat;
   background-size: cover;
   margin-bottom: 65px; }
+  header .navbar-collapse {
+    border: none; }
   header .nav_bottom {
     margin-bottom: 51px; }
   header .navbar-default {
@@ -190,6 +197,7 @@ header {
 
 .Super_easy {
   background: url("../images/IPhone.png") no-repeat right #f2f2f2;
+  background-size: contain;
   padding: 61px 0 65px; }
   .Super_easy .container .row .col-md-7 img {
     width: 100%; }
@@ -212,5 +220,66 @@ header {
   .Super_easy .container .row .col-md-5 p {
     color: #999999;
     font-size: 18px; }
+
+.Pricings .container-fluid .row img {
+  width: 100%; }
+.Pricings .container-fluid .row .carousel-caption {
+  top: 65px; }
+.Pricings .container-fluid .row h3 {
+  font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Bold', sans-serif;
+  color: #ffffff;
+  font-size: 36px; }
+  .Pricings .container-fluid .row h3:before {
+    content: "QUALITY HAS ITS PRICE";
+    display: block;
+    font-size: 14px;
+    color: #008ed6;
+    margin-bottom: 24px; }
+  .Pricings .container-fluid .row h3:after {
+    content: url("../images/after_two.png");
+    display: block;
+    margin-top: 29px; }
+.Pricings .container-fluid .row p {
+  font-family: 'Source Sans Pro-it', SansSerif;
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 31px; }
+.Pricings .container-fluid .row .col-sm-6 img {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  overflow: hidden; }
+.Pricings .container-fluid .row h4 {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif; }
+.Pricings .container-fluid .row .John {
+  margin-left: 24px; }
+  .Pricings .container-fluid .row .John:after {
+    display: block;
+    content: "CEO, THE RIVERS COMPANY";
+    margin-top: 15px; }
+.Pricings .container-fluid .row .Dean {
+  margin-left: 25px; }
+  .Pricings .container-fluid .row .Dean:after {
+    display: block;
+    content: "UX DESIGNER, GOOGLE INC.";
+    margin-top: 16px; }
+.Pricings .container-fluid .row .carousel-indicators .active {
+  background-color: #ffffff;
+  width: 14px;
+  height: 14px;
+  border: none;
+  position: relative;
+  bottom: -7px;
+  margin: 0 7px 0; }
+.Pricings .container-fluid .row .carousel-indicators li {
+  width: 4px;
+  height: 4px;
+  margin: 0 11px 0;
+  border-radius: 50px; }
+.Pricings .container-fluid .row carousel-inner {
+  padding-bottom: 60px; }
 
 /*# sourceMappingURL=style.preproc.css.map */

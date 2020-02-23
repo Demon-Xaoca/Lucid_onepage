@@ -1,5 +1,7 @@
 @import "bootstrap.css";
 @import "bootstrap-theme.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('../fonts/SourceSansPro-SemiBold.eot');
@@ -54,11 +56,18 @@
   font-weight: normal;
   font-style: italic;
 }
-
-* {
-  padding: 0;
-  margin: 0;
+@font-face {
+  font-family: 'Source Sans Pro-Light';
+  src: url('../fonts/SourceSansPro-Light.eot');
+  src: url('../fonts/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SourceSansPro-Light.woff2') format('woff2'),
+  url('../fonts/SourceSansPro-Light.woff') format('woff'),
+  url('../fonts/SourceSansPro-Light.ttf') format('truetype'),
+  url('../fonts/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
+
 header {
   background: url("../images/header_bg.png"), no-repeat;
   background-size: cover;
@@ -199,7 +208,7 @@ header {
     margin-bottom: 18px;
   }
   h3,p{
-    font-family: 'Source Sans Pro-Regular',SansSerif;
+    font-family: 'Source Sans Pro-Regular',sans-serif;
   }
   p {
     color: #999999;
@@ -320,92 +329,130 @@ header {
     }
   }
 }
-.Pricings .container-fluid .row {
-  img {
-    width: 100%;
-  }
-
-  .carousel-caption {
-    top: 65px;
-  }
-
-  h3 {
-    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Bold', sans-serif;
-    color: #ffffff;
-    font-size: 36px;
-
-    &:before {
-      content: "QUALITY HAS ITS PRICE";
-      display: block;
-      font-size: 14px;
-      color: #008ed6;
-      margin-bottom: 24px;
+.Pricings {
+  background: url("../images/Pricings.png") no-repeat;
+  background-size: cover;
+  padding: 65px 0 60px;
+  color: #ffffff;
+  .container .row {
+   .My_content {
+     position: relative;
+   }
+    h2 {
+      font-family: "Source Sans Pro-SemiBold",'Source Sans Pro-Bold', sans-serif;
+      font-size: 36px;
+      &:before {
+        color: #008ed6;
+        font-size: 14px;
+        display: block;
+        content: "quality has its price";
+        text-transform: uppercase;
+        margin-bottom: 19px;
+      }
+      &:after {
+        content: url("../images/after_two.png");
+        display: block;
+        margin: 29px 0 95px;
+      }
     }
-
-    &:after {
-      content: url("../images/after_two.png");
-      display: block;
-      margin-top: 29px;
-    }
+      p {
+        font-family: 'Source Sans Pro-it', sans-serif;
+        font-size: 24px;
+        margin-bottom: 26px;
+      }
+      img {
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        margin-right: 25px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      h3 {
+        font-family:'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+        font-size: 16px;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+      }
+      .John:after {
+        content: "CEO, THE RIVERS COMPANY";
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        margin-top: 16px;
+      }
+      .Dean:after {
+        content: "UX DESIGNER, GOOGLE INC.";
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        margin-top: 16px;
+      }
   }
-
-  p {
-    font-family: 'Source Sans Pro-it', SansSerif;
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 31px;
+  .owl-nav {
+    display: none;
   }
-
-  .col-sm-6 img {
-    width: 59px;
-    height: 59px;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-
-  h4 {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
-  }
-
-  .John {
-    margin-left: 24px;
-
-    &:after {
-      display: block;
-      content: "CEO, THE RIVERS COMPANY";
-      margin-top: 15px;
-    }
-  }
-
-  .Dean {
-    margin-left: 25px;
-    &:after {
-      display: block;
-      content: "UX DESIGNER, GOOGLE INC.";
-      margin-top: 16px;
-    }
-  }
-  .carousel-indicators {
-    .active {
-      background-color: #ffffff;
-      width: 14px;
-      height: 14px;
-      border: none;
+  .owl-theme .owl-dots {
+    margin-top: 140px;
+    .owl-dot.active {
+      bottom: -3px;
       position: relative;
-      bottom: -7px;
-      margin: 0 7px 0;
+      span {
+        height: 14px;
+        width: 14px;
+        background-color: #ffffff;
+        margin: 0 -5px 0;
+      }
     }
-    li {
-      width: 4px;
-      height: 4px;
+    .owl-dot {
+      bottom: 0;
       margin: 0 11px 0;
-      border-radius: 50px;
+      span {
+        height: 4px;
+        width: 4px;
+        background: none;
+        border: 2px solid #4c484a;
+      }
     }
   }
-  carousel-inner {
-    padding-bottom: 60px;
+}
+*:focus,a:focus {
+  outline: none;
+}
+.Like {
+  padding: 69px 0 60px;
+  background-color: #15141a;
+  .container .row {
+    .col-md-7 {
+      h3 {
+        margin: 0  0 6px 2px;
+        font-family: 'Source Sans Pro-SemiBold', 'Source Sans Pro-Light', sans-serif;
+        color: #ffffff;
+        font-size: 36px;
+      }
+    }
+    .col-md-4.col-md-offset-1.text-right {
+      a {
+        text-decoration: none;
+        padding: 19px 30px;
+        border: 1px solid #444348;
+        margin: 0 10px 0;
+        font-family: 'Source Sans Pro-Bold', sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        display: inline-block;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          background-color: #008ed6;
+          border: 1px solid #008ed6;
+        }
+      }
+    }
   }
 }

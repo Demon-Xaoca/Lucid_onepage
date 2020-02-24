@@ -423,6 +423,7 @@ header {
 .Like {
   padding: 69px 0 60px;
   background-color: #15141a;
+  margin-bottom: 60px;
   .container .row {
     .col-md-7 {
       h3 {
@@ -452,6 +453,111 @@ header {
           background-color: #008ed6;
           border: 1px solid #008ed6;
         }
+      }
+    }
+  }
+}
+.Pricings_two .row {
+  > h3 {
+    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Bold', sans-serif;
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 70px;
+
+    &:before {
+      color: #008ed6;
+      font-size: 14px;
+      display: block;
+      content: "quality has its price";
+      text-transform: uppercase;
+      margin-bottom: 19px;
+    }
+
+    &:after {
+      content: url("../images/after_two.png");
+      display: block;
+      margin-top: 29px;
+    }
+  }
+
+  .col-md-3 {
+    div {
+      padding: 29px 0 28px 0;
+      border: 1px solid #e0e0e0;
+      width: 100%;
+
+      h3 {
+        font-family: "Source Sans Pro-Bold", sans-serif;
+        font-size: 24px;
+        color: #1a1a1a;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 0;
+
+        &:nth-child(2) {
+          font-family: 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+          font-size: 60px;
+          padding: 26px 0 35px;
+          display: inline-block;
+          margin: 0 0 51px;
+          width: 100%;
+
+          &:before {
+            content: "$";
+            display: inline-block;
+            margin-right: 3px;
+            font-size: 48px;
+            vertical-align: top;
+          }
+
+          &:after {
+            display: block;
+            color: #999999;
+            font-size: 18px;
+            margin-top: 15px;
+            content: "/per month";
+          }
+        }
+      }
+
+      p {
+        font-family: 'Source Sans Pro-Regular', sans-serif;
+        font-size: 18px;
+        color: #999999;
+        margin-bottom: 47px;
+
+        span {
+          color: #008ed6;
+        }
+      }
+
+      a {
+        font-family: 'Source Sans Pro-Bold', sans-serif;
+        padding: 21px 43px 20px 41px;
+        border: 1px solid #e0e0e0;
+        border-radius: 3px;
+        color: #008ed6;
+        font-size: 14px;
+        text-decoration: none;
+      }
+    }
+    .Blue {
+      h3 {
+        color: #008ed6;
+        border-bottom: #008ed6 solid 1px;
+        &:nth-child(2){
+          background-color: #008ed6;
+          border-bottom: #008ed6 solid 1px;
+          color: #fafafa;
+          &:after {
+            color: #fafafa;
+          }
+        }
+      }
+      a {
+        background-color: #008ed6;
+        border: #008ed6;
+        color: #ffffff;
       }
     }
   }

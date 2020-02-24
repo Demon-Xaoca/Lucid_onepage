@@ -300,7 +300,8 @@ header {
 
 .Like {
   padding: 69px 0 60px;
-  background-color: #15141a; }
+  background-color: #15141a;
+  margin-bottom: 60px; }
   .Like .container .row .col-md-7 h3 {
     margin: 0  0 6px 2px;
     font-family: 'Source Sans Pro-SemiBold', 'Source Sans Pro-Light', sans-serif;
@@ -322,5 +323,80 @@ header {
     .Like .container .row .col-md-4.col-md-offset-1.text-right a:hover {
       background-color: #008ed6;
       border: 1px solid #008ed6; }
+
+.Pricings_two .row > h3 {
+  font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Bold', sans-serif;
+  font-size: 36px;
+  color: #1a1a1a;
+  margin-bottom: 70px; }
+  .Pricings_two .row > h3:before {
+    color: #008ed6;
+    font-size: 14px;
+    display: block;
+    content: "quality has its price";
+    text-transform: uppercase;
+    margin-bottom: 19px; }
+  .Pricings_two .row > h3:after {
+    content: url("../images/after_two.png");
+    display: block;
+    margin-top: 29px; }
+.Pricings_two .row .col-md-3 div {
+  padding: 29px 0 28px 0;
+  border: 1px solid #e0e0e0;
+  width: 100%; }
+  .Pricings_two .row .col-md-3 div h3 {
+    font-family: "Source Sans Pro-Bold", sans-serif;
+    font-size: 24px;
+    color: #1a1a1a;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0; }
+    .Pricings_two .row .col-md-3 div h3:nth-child(2) {
+      font-family: 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+      font-size: 60px;
+      padding: 26px 0 35px;
+      display: inline-block;
+      margin: 0 0 51px;
+      width: 100%; }
+      .Pricings_two .row .col-md-3 div h3:nth-child(2):before {
+        content: "$";
+        display: inline-block;
+        margin-right: 3px;
+        font-size: 48px;
+        vertical-align: top; }
+      .Pricings_two .row .col-md-3 div h3:nth-child(2):after {
+        display: block;
+        color: #999999;
+        font-size: 18px;
+        margin-top: 15px;
+        content: "/per month"; }
+  .Pricings_two .row .col-md-3 div p {
+    font-family: 'Source Sans Pro-Regular', sans-serif;
+    font-size: 18px;
+    color: #999999;
+    margin-bottom: 47px; }
+    .Pricings_two .row .col-md-3 div p span {
+      color: #008ed6; }
+  .Pricings_two .row .col-md-3 div a {
+    font-family: 'Source Sans Pro-Bold', sans-serif;
+    padding: 21px 43px 20px 41px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    color: #008ed6;
+    font-size: 14px;
+    text-decoration: none; }
+.Pricings_two .row .col-md-3 .Blue h3 {
+  color: #008ed6;
+  border-bottom: #008ed6 solid 1px; }
+  .Pricings_two .row .col-md-3 .Blue h3:nth-child(2) {
+    background-color: #008ed6;
+    border-bottom: #008ed6 solid 1px;
+    color: #fafafa; }
+    .Pricings_two .row .col-md-3 .Blue h3:nth-child(2):after {
+      color: #fafafa; }
+.Pricings_two .row .col-md-3 .Blue a {
+  background-color: #008ed6;
+  border: #008ed6;
+  color: #ffffff; }
 
 /*# sourceMappingURL=style.preproc.css.map */

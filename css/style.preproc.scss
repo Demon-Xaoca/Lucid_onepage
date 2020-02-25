@@ -2,6 +2,7 @@
 @import "bootstrap-theme.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('../fonts/SourceSansPro-SemiBold.eot');
@@ -593,7 +594,7 @@ header {
     }
     >div {
       padding: 0;
-      margin-bottom: 53px;
+      margin-bottom: 9px;
       p {
         font-family: 'Source Sans Pro-Regular', sans-serif;
         font-size: 18px;
@@ -618,6 +619,8 @@ header {
     .Form {
       background-color: #15141a;
       padding: 59px 0 40px;
+      position: relative;
+      bottom: -64px;
       .Left {
         padding: 0  19px 0 66px;
         input {
@@ -667,5 +670,85 @@ header {
       text-transform: uppercase;
     }
   }
+  iframe {
+    width:100%;
+    height: 370px;
+    border: none;
+  }
 }
+footer {
+  background-color: #15141a;
+  padding: 92px 0 46px;
 
+  .behance {
+    &:before {
+      content: "\f1b4";
+      display: inline-block;
+      font-family: fontawesome, sans-serif;
+      font-size: 13px;
+      color: #444348;
+    }
+    &:hover:before {
+      color: black;
+    }
+  }
+  .dribble {
+    &:before {
+      content: "\f17d";
+      display: inline-block;
+      font-family: fontawesome, sans-serif;
+      font-size: 18px;
+      color: #444348;
+    }
+    &:hover:before {
+      color: #B2215A;
+    }
+  }
+  .twitter{
+    &:before {
+      content: "\f099";
+      display: inline-block;
+      font-family: fontawesome, sans-serif;
+      font-size: 14px;
+      color: #444348;
+    }
+    &:hover:before {
+      color: #008ed6;
+    }
+  }
+  .facebook{
+    &:before {
+      content: "\f082";
+      display: inline-block;
+      font-family: fontawesome, sans-serif;
+      font-size: 18px;
+      color: #444348;
+    }
+    &:hover:before {
+      color: #1D4D99;
+    }
+  }
+  .linkedin{
+    &:before {
+      content: "\f0e1";
+      display: inline-block;
+      font-family: fontawesome, sans-serif;
+      font-size: 18px;
+      color: #444348;
+    }
+    &:hover:before {
+      color: #0073B0;
+    }
+  }
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 16px 0;
+  }
+  p {
+    font-family: "Source Sans Pro-SemiBold", sans-serif;
+    color: #444348;
+    font-size: 14px;
+    margin-top: 32px;
+  }
+}

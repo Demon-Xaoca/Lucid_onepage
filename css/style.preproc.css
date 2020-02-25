@@ -399,4 +399,89 @@ header {
   border: #008ed6;
   color: #ffffff; }
 
+.Blocks {
+  margin-bottom: 60px; }
+
+.Contact_us {
+  background-color: #ededed;
+  padding-top: 60px; }
+  .Contact_us .container .row h3 {
+    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Bold', sans-serif;
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 59px; }
+    .Contact_us .container .row h3:before {
+      font-size: 14px;
+      color: #008ed6;
+      display: block;
+      content: "stay in touch";
+      text-transform: uppercase;
+      margin-bottom: 24px; }
+    .Contact_us .container .row h3:after {
+      content: url("../images/after_two.png");
+      display: block;
+      margin-top: 28px; }
+  .Contact_us .container .row .Form_Block {
+    margin-bottom: 0; }
+  .Contact_us .container .row > div {
+    padding: 0;
+    margin-bottom: 53px; }
+    .Contact_us .container .row > div p {
+      font-family: 'Source Sans Pro-Regular', sans-serif;
+      font-size: 18px;
+      color: #999999; }
+    .Contact_us .container .row > div .Mobila:before {
+      display: block;
+      content: url("../images/Mobila.png");
+      margin-bottom: 32px; }
+    .Contact_us .container .row > div .Pointer:before {
+      display: block;
+      content: url("../images/Pointer.png");
+      margin-bottom: 32px; }
+    .Contact_us .container .row > div .Envelope:before {
+      display: block;
+      content: url("../images/Envelope.png");
+      margin-bottom: 32px; }
+  .Contact_us .container .row .Form {
+    background-color: #15141a;
+    padding: 59px 0 40px; }
+    .Contact_us .container .row .Form .Left {
+      padding: 0  19px 0 66px; }
+      .Contact_us .container .row .Form .Left input {
+        padding: 20px 17px 19px;
+        margin-bottom: 20px;
+        height: 48px;
+        box-sizing: border-box; }
+        .Contact_us .container .row .Form .Left input:last-child {
+          margin-bottom: 0; }
+    .Contact_us .container .row .Form .Padding {
+      padding: 0 10px 0 0; }
+    .Contact_us .container .row .Form .Send {
+      padding: 0 10px 0 25px; }
+    .Contact_us .container .row .Form .Left input, .Contact_us .container .row .Form .col-sm-5 textarea {
+      border: 1px solid #444348;
+      background: none;
+      text-transform: uppercase;
+      font-family: 'Source Sans Pro-Bold', sans-serif;
+      font-size: 14px;
+      color: #ffffff; }
+    .Contact_us .container .row .Form .col-sm-5 textarea {
+      padding: 20px 20px;
+      resize: none;
+      height: 188px;
+      box-sizing: border-box; }
+  .Contact_us .container .row .Bottom {
+    padding-bottom: 0;
+    margin-bottom: 21px; }
+  .Contact_us .container .row .Massage {
+    background-color: #008ed6;
+    padding: 21px 33px 20px 34px;
+    min-height: 50px;
+    background-image: none;
+    border: none;
+    font-family: 'Source Sans Pro-Bold', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase; }
+
 /*# sourceMappingURL=style.preproc.css.map */

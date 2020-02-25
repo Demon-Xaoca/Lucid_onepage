@@ -562,3 +562,110 @@ header {
     }
   }
 }
+.Blocks {
+  margin-bottom: 60px;
+}
+.Contact_us {
+  background-color: #ededed;
+  padding-top: 60px;
+  .container .row {
+    h3 {
+      font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Bold', sans-serif;
+      font-size: 36px;
+      color: #1a1a1a;
+      margin-bottom: 59px;
+      &:before {
+        font-size: 14px;
+        color: #008ed6;
+        display: block;
+        content: "stay in touch";
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+      &:after {
+        content: url("../images/after_two.png");
+        display: block;
+        margin-top: 28px;
+      }
+    }
+    .Form_Block {
+      margin-bottom: 0;
+    }
+    >div {
+      padding: 0;
+      margin-bottom: 53px;
+      p {
+        font-family: 'Source Sans Pro-Regular', sans-serif;
+        font-size: 18px;
+        color: #999999;
+      }
+      .Mobila:before {
+        display: block;
+        content: url("../images/Mobila.png");
+        margin-bottom: 32px;
+      }
+      .Pointer:before {
+        display: block;
+        content: url("../images/Pointer.png");
+        margin-bottom: 32px;
+      }
+      .Envelope:before {
+        display: block;
+        content: url("../images/Envelope.png");
+        margin-bottom: 32px;
+      }
+    }
+    .Form {
+      background-color: #15141a;
+      padding: 59px 0 40px;
+      .Left {
+        padding: 0  19px 0 66px;
+        input {
+          padding: 20px 17px 19px;
+          margin-bottom: 20px;
+          height: 48px;
+          box-sizing: border-box;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .Padding {
+        padding: 0 10px 0 0;
+      }
+      .Send {
+        padding: 0 10px 0 25px;
+      }
+      .Left input, .col-sm-5 textarea {
+        border: 1px solid #444348;
+        background: none;
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro-Bold', sans-serif;
+        font-size: 14px;
+        color:#ffffff;
+      }
+      .col-sm-5 textarea {
+        padding: 20px 20px;
+        resize: none;
+        height: 188px;
+        box-sizing: border-box;
+      }
+    }
+    .Bottom {
+      padding-bottom: 0;
+      margin-bottom: 21px;
+    }
+    .Massage {
+      background-color: #008ed6;
+      padding: 21px 33px 20px 34px;
+      min-height: 50px;
+      background-image: none;
+      border: none;
+      font-family: 'Source Sans Pro-Bold', sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+}
+

@@ -4,6 +4,15 @@ $(document).ready(function(){
         nav:true,
         loop:true,
         margin:53,
-        autoplay:true
+        autoplay:true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2
+            }
+        }
     });
 });
+

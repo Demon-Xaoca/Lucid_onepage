@@ -73,6 +73,9 @@ header {
   background: url("../images/header_bg.png"), no-repeat;
   background-size: cover;
   margin-bottom: 65px;
+  .nav .navbar-nav .navbar-right {
+    border: none;
+  }
   .navbar-collapse {
     border:none;
   }
@@ -84,40 +87,52 @@ header {
     border: none;
     background: none;
 
-    .navbar-brand, .navbar-nav > li > a {
-      margin-top: 42px;
-    }
-
-    .navbar-brand, .navbar-brand:hover {
-      color: #ffffff;
-      font-size: 24px;
-      font-family: 'Quicksand-Bold', sans-serif;
-    }
 
     .navbar-nav > li {
       margin: 0 12px 0;
       font-family: "Source Sans Pro", sans-serif;
 
-      > a {
-        color: #fffefe;
+       > a {
         font-size: 16px;
-
-        &:after {
-          height: 2px;
-          display: block;
-          background: url("../images/hover_menu.png"), no-repeat;
-          background-size: cover;
+        color: #fffefe;
+        position: relative;
+        padding-bottom: 0;
+        &:after{
           content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background-color: #008ed6;
+          position: relative;
+          top: 2px;
+          opacity: 0;
+          transition: 0.3s;
           margin-top: 13px;
-          width: 0;
-          transition: 0.5s;
         }
-
-        &:hover {
+        &:before{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 2px;
+          height: 3px;
+          background-color: #16115b;
+          bottom: -2px;
+          left: 50%;
+          margin-left: -1px;
+          z-index: 1;
+          opacity: 0;
+          transition: 0.3s;
+          margin-top: 13px;
+        }
+      }
+    }
+    .navbar-nav > li {
+      &:hover {
+        a {
+          background-color: transparent;
           color: #fffefe;
-
-          &:after {
-            width: 100%;
+          &:after, &:before{
+            opacity: 1;
           }
         }
       }
@@ -152,7 +167,7 @@ header {
       margin-left: 0;
     }
       a {
-        padding: 19px 30px 19px;
+        padding: 20px 30px 19px;
         border:1px solid #454449;
         border-radius: 1px;
         margin: 0 10px;
@@ -162,9 +177,8 @@ header {
         text-decoration: none;
         display: inline-block;
         &:hover {
-          padding: 21px 28px 20px;
           background-color:#008ed6;
-          border: none;
+          border: 1px solid #008ed6;
         }
       }
   }
@@ -216,72 +230,82 @@ header {
     font-size: 18px;
   }
 }
-.Telephone .container .row div {
-  .devices {
-    width: 100%;
-    margin: 0 55px 76px 0;
+.Telephone .container .row {
+  .devices_block {
+    padding: 11px 90px 11px 56px;
   }
-
-  h2 {
-    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
-    color: #1a1a1a;
-    font-size: 36px;
-    padding-left: 3px;
-
-    &:before {
-      content: "DIP INTO THE DETAILS";
-      display: block;
-      color: #008ed6;
-      font-size: 14px;
-      margin-bottom: 22px;
-      padding-left: -2px;
+  div {
+    .devices {
+      width: 100%;
     }
 
-    &:after {
-      content: url("../images/after_two.png");
-      display: block;
-      margin: 34px 0 32px;
-      padding-left: 0;
-    }
-  }
-
-  p {
-    font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
-    color: #999999;
-    font-size: 18px;
-    margin-bottom: 42px;
-  }
-
-  ul {
-    .Cup:before {
-      content: url("../images/Cup.png");
-      display: inline-block;
-      margin-right: 10px;
-    }
-    .Mouse:before {
-      content: url("../images/Mouse.png");
-      display: inline-block;
-      margin-right: 14px;
-    }
-    .Energy:before {
-      content: url("../images/Energy.png");
-      display: inline-block;
-      margin-right: 13px;
-    }
-    .Speed:before {
-      content: url("../images/Speed.png");
-      display: inline-block;
-      margin-right: 10px;
-    }
-    li {
-      margin-bottom: 18px;
+    h2 {
       font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
-      list-style-type: none;
-      color: #1b1b1b;
-      font-size: 18px;
+      color: #1a1a1a;
+      font-size: 36px;
+      padding-left: 3px;
 
-      &:last-child {
-        margin-bottom: 0;
+      &:before {
+        content: "DIP INTO THE DETAILS";
+        display: block;
+        color: #008ed6;
+        font-size: 14px;
+        margin-bottom: 22px;
+        padding-left: -2px;
+      }
+
+      &:after {
+        content: url("../images/after_two.png");
+        display: block;
+        margin: 34px 0 32px;
+        padding-left: 0;
+      }
+    }
+
+    p {
+      font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+      color: #999999;
+      font-size: 18px;
+      margin-bottom: 42px;
+    }
+
+    ul {
+      padding-left: 0;
+
+      .Cup:before {
+        content: url("../images/Cup.png");
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .Mouse:before {
+        content: url("../images/Mouse.png");
+        display: inline-block;
+        margin-right: 14px;
+      }
+
+      .Energy:before {
+        content: url("../images/Energy.png");
+        display: inline-block;
+        margin-right: 13px;
+      }
+
+      .Speed:before {
+        content: url("../images/Speed.png");
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      li {
+        margin-bottom: 18px;
+        font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
+        list-style-type: none;
+        color: #1b1b1b;
+        font-size: 18px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -297,7 +321,7 @@ header {
         width: 100%;
       }
     }
-    .col-md-5 {
+    .col-md-6 {
       h2, p {
         font-family: "Source Sans Pro-SemiBold", 'Source Sans Pro-Regular', 'Source Sans Pro-Bold', sans-serif;
       }
@@ -437,13 +461,15 @@ header {
     .col-md-4.col-md-offset-1.text-right {
       a {
         text-decoration: none;
-        padding: 19px 30px;
+        padding: 20px 31px 20px 30px;
         border: 1px solid #444348;
         margin: 0 10px 0;
         font-family: 'Source Sans Pro-Bold', sans-serif;
         font-size: 14px;
         color: #ffffff;
         display: inline-block;
+        width:168px;
+        box-sizing: border-box;
         &:first-child {
           margin-left: 0;
         }
@@ -454,6 +480,9 @@ header {
           background-color: #008ed6;
           border: 1px solid #008ed6;
         }
+      }
+      .download {
+        padding: 20px 27px 20px 27px;
       }
     }
   }
@@ -621,6 +650,7 @@ header {
       padding: 59px 0 40px;
       position: relative;
       bottom: -64px;
+      z-index: 100;
       .Left {
         padding: 0  19px 0 66px;
         input {
@@ -679,7 +709,6 @@ header {
 footer {
   background-color: #15141a;
   padding: 92px 0 46px;
-
   .behance {
     &:before {
       content: "\f1b4";
@@ -750,5 +779,97 @@ footer {
     color: #444348;
     font-size: 14px;
     margin-top: 32px;
+  }
+}
+.Hidden {
+  overflow: hidden;
+}
+@media only screen and (max-width: 1200px) {
+  .Like .container .row .col-md-4.col-md-offset-1.text-right a {
+    font-size: 20px;
+    width: 207px;
+
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+  header {
+    .font_header p {
+      font-size: 25px;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+      font-size: 20px;
+    }
+  }
+  .List_sect {
+    h3 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    .List_of:before {
+      font-size: 20px;
+    }
+  }
+  .Telephone .container .row div {
+    h2:before {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    ul li {
+      font-size: 22px;
+    }
+  }
+  .Super_easy .container .row .col-md-6 {
+    h3:before {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+  }
+  .Pricings .container .row p {
+    font-size: 30px;
+  }
+  .Pricings_two .row .col-md-3 div {
+    h3:nth-child(2):after, p {
+      font-size: 23px;
+    }
+  }
+  .Contact_us .container .row {
+    > div p {
+      font-size: 22px;
+    }
+    .Form .Left input, .Form .col-sm-5 textarea {
+      font-size: 24px;
+    }
+  }
+  footer {
+    .adapt:before {
+      font-size: 45px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .Contact_us .container .row .Form .Left {
+      padding-left: 15px;
+    }
+    @media only screen and (max-width: 389px) {
+      header .font_header a {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+    }
   }
 }
